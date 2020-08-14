@@ -4,6 +4,7 @@ package com.creditCardValidation;
 public class CreditCard {
     private String number;
     private String numberStatus;
+    private String cardType;
 
     public String getNumber() {
         return number;
@@ -13,9 +14,17 @@ public class CreditCard {
         this.number = number;
     }
 
-//    public String checkCardType(String number) {
-//
-//    }
+    public String checkCardType(String number) {
+        String[] arrayOfNumbers = number.split("");
+        if (number.matches("[5][1-4]\\d{14}") || number.matches("[222100-272099]\\d{10}")){
+            cardType = "MasterCard";
+        }
+        else
+            if(number.matches("[4]\\d{12}\\d{14}\\d{18}")){
+                cardType = "Visa";
+            }
+            return cardType;
+    }
 
     public String validateCardNUmber(String number) {
         // Reverse the inputted number
@@ -67,5 +76,6 @@ public class CreditCard {
 
         return numberStatus;
     }
+
 }
 
