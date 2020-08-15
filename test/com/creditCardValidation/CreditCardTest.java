@@ -19,17 +19,41 @@ class CreditCardTest {
     }
 
     @Test
-    void validateCardNumber(){
+    void checkIfCardNumberIsValid(){
         CreditCard newCard = new CreditCard();
-        newCard.setNumber("5370100328846257");
-        assertEquals("valid",newCard.validateCardNUmber(newCard.getNumber()));
+        newCard.setCreditCardNumber("5370100328846257");
+        assertTrue(newCard.isValid());
+
+        CreditCard newCard2 = new CreditCard();
+        newCard2.setCreditCardNumber("5890652109876544");
+        assertFalse(newCard2.isValid());
     }
 
     @Test
     void checkCardType(){
         CreditCard creditCard1 = new CreditCard();
-        creditCard1.setNumber("5370100328846257");
-        assertEquals("MasterCard",creditCard1.checkCardType(creditCard1.getNumber()));
+        creditCard1.setCreditCardNumber("5370100328846257");
+        assertEquals("MasterCard",creditCard1.checkCardType(creditCard1.getCreditCardNumber()));
 
+        CreditCard creditCard2 = new CreditCard();
+        creditCard2.setCreditCardNumber("4000123456789010");
+        assertEquals("Visa",creditCard2.checkCardType(creditCard2.getCreditCardNumber()));
     }
+
+    @Test
+    void sumStringedDigits(){
+        CreditCard creditCard2 = new CreditCard();
+        int sum = creditCard2.getSumOfDigits("123456789");
+        assertEquals(45,sum);
+    }
+
+    @Test
+    void reverseCreditCardNumber(){
+        CreditCard creditCard1 = new CreditCard();
+        creditCard1.setCreditCardNumber("5370100328846257");
+        String creditCard1Number = creditCard1.getCreditCardNumber();
+        assertEquals("7526488230010735",creditCard1.reverseCardNumber(creditCard1Number));
+    }
+
+
 }

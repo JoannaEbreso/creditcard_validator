@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a8eef508-4c3e-4351-be5f-8f167883e154" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CreditCardValidation/com/creditCardValidation/CreditCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CreditCardValidation/com/creditCardValidation/CreditCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CreditCardValidation/com/creditCardValidation/MasterCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CreditCardValidation/com/creditCardValidation/VisaCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/CreditCardValidation/com/creditCardValidation/CreditCardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/CreditCardValidation/com/creditCardValidation/CreditCardTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/creditCardValidation/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/creditCardValidation/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/creditCardValidation/MasterCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/creditCardValidation/MasterCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/creditCardValidation/MasterCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/creditCardValidation/VisaCard.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/creditCardValidation/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/creditCardValidation/CreditCardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
@@ -55,7 +61,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreditCardTest.checkCardType">
+  <component name="RunManager" selected="JUnit.CreditCardTest.reverseCreditCardNumber">
     <configuration name="CreditCardTest.checkCardType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCardValidation" />
       <extension name="coverage">
@@ -72,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreditCardTest.validateCardNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreditCardTest.checkIfCardNumberIsValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCardValidation" />
       <extension name="coverage">
         <pattern>
@@ -82,7 +88,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.creditCardValidation" />
       <option name="MAIN_CLASS_NAME" value="com.creditCardValidation.CreditCardTest" />
-      <option name="METHOD_NAME" value="validateCardNumber" />
+      <option name="METHOD_NAME" value="checkIfCardNumberIsValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreditCardTest.reverseCreditCardNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CreditCardValidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.creditCardValidation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.creditCardValidation" />
+      <option name="MAIN_CLASS_NAME" value="com.creditCardValidation.CreditCardTest" />
+      <option name="METHOD_NAME" value="reverseCreditCardNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreditCardTest.setCardNUmber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CreditCardValidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.creditCardValidation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.creditCardValidation" />
+      <option name="MAIN_CLASS_NAME" value="com.creditCardValidation.CreditCardTest" />
+      <option name="METHOD_NAME" value="setCardNUmber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreditCardTest.sumStringedDigits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CreditCardValidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.creditCardValidation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.creditCardValidation" />
+      <option name="MAIN_CLASS_NAME" value="com.creditCardValidation.CreditCardTest" />
+      <option name="METHOD_NAME" value="sumStringedDigits" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,8 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreditCardTest.reverseCreditCardNumber" />
+        <item itemvalue="JUnit.CreditCardTest.sumStringedDigits" />
+        <item itemvalue="JUnit.CreditCardTest.setCardNUmber" />
+        <item itemvalue="JUnit.CreditCardTest.checkIfCardNumberIsValid" />
         <item itemvalue="JUnit.CreditCardTest.checkCardType" />
-        <item itemvalue="JUnit.CreditCardTest.validateCardNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -109,26 +166,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="59" key="#com.intellij.ide.util.MemberChooser" timestamp="1597282659112">
+    <state x="488" y="59" key="#com.intellij.ide.util.MemberChooser" timestamp="1597455753745">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1597282659112" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1597358248008">
+    <state x="488" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1597455753745" />
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1597496117187">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597358248008" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1597358248008">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597496117187" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1597496117187">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597358248008" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1597358248008">
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597496117187" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1597496117187">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597358248008" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1597358248008">
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597496117187" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1597496117187">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597358248008" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597496117187" />
     <state x="388" y="272" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1597321762414">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -137,5 +194,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="454" y="60" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1597321766953" />
+    <state x="518" y="154" key="extract.method.dialog" timestamp="1597452993991">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="518" y="154" key="extract.method.dialog/0.0.1366.768@0.0.1366.768" timestamp="1597452993991" />
   </component>
 </project>
