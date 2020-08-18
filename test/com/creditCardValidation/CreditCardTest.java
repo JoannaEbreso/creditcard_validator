@@ -32,7 +32,7 @@ class CreditCardTest {
     @Test
     void checkCardType(){
         CreditCard creditCard1 = new CreditCard();
-        creditCard1.setCreditCardNumber("5370100328846257");
+        creditCard1.setCreditCardNumber("5470136732184657");
         assertEquals("MasterCard",creditCard1.checkCardType(creditCard1.getCreditCardNumber()));
 
         CreditCard creditCard2 = new CreditCard();
@@ -46,14 +46,5 @@ class CreditCardTest {
         int sum = creditCard2.getSumOfDigits("123456789");
         assertEquals(45,sum);
     }
-
-    @Test
-    void reverseCreditCardNumber(){
-        CreditCard creditCard1 = new CreditCard();
-        creditCard1.setCreditCardNumber("5370100328846257");
-        String creditCard1Number = creditCard1.getCreditCardNumber();
-        assertEquals("7526488230010735",creditCard1.reverseCardNumber(creditCard1Number));
-    }
-
 
 }

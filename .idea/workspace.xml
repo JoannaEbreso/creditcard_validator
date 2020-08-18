@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a8eef508-4c3e-4351-be5f-8f167883e154" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CreditCardValidation/com/creditCardValidation/CreditCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CreditCardValidation/com/creditCardValidation/CreditCard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CreditCardValidation/com/creditCardValidation/MasterCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CreditCardValidation/com/creditCardValidation/VisaCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/CreditCardValidation/com/creditCardValidation/CreditCardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/CreditCardValidation/com/creditCardValidation/CreditCardTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/creditCardValidation/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/creditCardValidation/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/creditCardValidation/MasterCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/creditCardValidation/VisaCard.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/creditCardValidation/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/creditCardValidation/CreditCardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +45,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
@@ -61,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreditCardTest.reverseCreditCardNumber">
+  <component name="RunManager" selected="JUnit.CreditCardTest.checkCardType">
     <configuration name="CreditCardTest.checkCardType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CreditCardValidation" />
       <extension name="coverage">
@@ -144,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreditCardTest.checkCardType" />
+        <item itemvalue="JUnit.CreditCardTest.checkIfCardNumberIsValid" />
         <item itemvalue="JUnit.CreditCardTest.reverseCreditCardNumber" />
         <item itemvalue="JUnit.CreditCardTest.sumStringedDigits" />
         <item itemvalue="JUnit.CreditCardTest.setCardNUmber" />
-        <item itemvalue="JUnit.CreditCardTest.checkIfCardNumberIsValid" />
-        <item itemvalue="JUnit.CreditCardTest.checkCardType" />
       </list>
     </recent_temporary>
   </component>
@@ -170,22 +165,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="488" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1597455753745" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1597496117187">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1597715582341">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597496117187" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1597496117187">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597715582341" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1597715582341">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597496117187" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1597496117187">
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597715582341" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1597715582341">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597496117187" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1597496117187">
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597715582341" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1597715582341">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597496117187" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597715582341" />
     <state x="388" y="272" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1597321762414">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

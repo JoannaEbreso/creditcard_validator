@@ -18,21 +18,26 @@ public class CreditCard {
         if (creditCardNumber.matches("[5][1-4]\\d{14}") || creditCardNumber.matches("[222100-272099]\\d{10}")){
             creditCardType = "MasterCard";
         }
-        else
-            if(creditCardNumber.matches("[4]\\d{12,18}")){
+        else if(creditCardNumber.matches("[4]\\d{12,18}")){
                 creditCardType = "Visa";
-            }
+        }
+        else if(creditCardNumber.matches("[37]\\d{11,14}")){
+                    creditCardType = "American Express";
+        }
+        else if(creditCardNumber.matches("[6]\\d{12,15}")){
+            creditCardType = "Discover card";
+        }
         return creditCardType;
     }
 
-    public String reverseCardNumber(String creditCardNumber){
-        String[] arrayOfNumbers = creditCardNumber.split("");
-        StringBuilder reversedCardNumber = new StringBuilder();
-        for(int i=arrayOfNumbers.length-1; i>=0; i--){
-            reversedCardNumber.append(arrayOfNumbers[i]);
-        }
-        return reversedCardNumber.toString();
-    }
+//    public String reverseCardNumber(String creditCardNumber){
+//        String[] arrayOfNumbers = creditCardNumber.split("");
+//        StringBuilder reversedCardNumber = new StringBuilder();
+//        for(int i=arrayOfNumbers.length-1; i>=0; i--){
+//            reversedCardNumber.append(arrayOfNumbers[i]);
+//        }
+//        return reversedCardNumber.toString();
+//    }
 
     private void checkForTwoDigitsAndSumThem(StringBuilder cardNumbers, String doubledDigit) {
         if(doubledDigit.length()==2){
@@ -77,7 +82,8 @@ public class CreditCard {
 
     public boolean isValid() {
         // Reverse the inputted number
-        String reversedNumber = reverseCardNumber(creditCardNumber);
+        StringBuilder creditCardNumber = new StringBuilder(getCreditCardNumber());
+        String reversedNumber = creditCardNumber.reverse().toString();
 
         //double the value of every digit in the reversed number that has an odd index
         String doubledNumbers = getStringOfDoubledCardNumber(reversedNumber);
