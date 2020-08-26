@@ -14,22 +14,6 @@ public class CreditCard {
         this.creditCardNumber = creditCardNumber;
     }
 
-    public String checkCardType(String creditCardNumber) {
-        if (creditCardNumber.matches("[5][1-4]\\d{14}") || creditCardNumber.matches("[222100-272099]\\d{10}")){
-            creditCardType = "MasterCard";
-        }
-        else if(creditCardNumber.matches("[4]\\d{12,18}")){
-                creditCardType = "Visa";
-        }
-        else if(creditCardNumber.matches("[37]\\d{11,14}")){
-                    creditCardType = "American Express";
-        }
-        else if(creditCardNumber.matches("[6]\\d{12,15}")){
-            creditCardType = "Discover card";
-        }
-        return creditCardType;
-    }
-
 //    public String reverseCardNumber(String creditCardNumber){
 //        String[] arrayOfNumbers = creditCardNumber.split("");
 //        StringBuilder reversedCardNumber = new StringBuilder();
@@ -80,9 +64,9 @@ public class CreditCard {
         return sumOfDigits;
     }
 
-    public boolean isValid() {
+    public boolean isValid(String number) {
         // Reverse the inputted number
-        StringBuilder creditCardNumber = new StringBuilder(getCreditCardNumber());
+        StringBuilder creditCardNumber = new StringBuilder(number);
         String reversedNumber = creditCardNumber.reverse().toString();
 
         //double the value of every digit in the reversed number that has an odd index
@@ -99,6 +83,24 @@ public class CreditCard {
         else{
            return false;
         }
+    }
+
+    public String checkCardType(String creditCardNumber) {
+        if (isValid(creditCardNumber)) {
+            if (creditCardNumber.matches("[5][1-4]\\d{14}") || creditCardNumber.matches("[222100-272099]\\d{10}")) {
+                creditCardType = creditCardNumber.getClass().getSimpleName();
+            } else if (creditCardNumber.matches("[4]\\d{12,18}")) {
+                creditCardType = creditCardNumber.getClass().getSimpleName();
+            } else if (creditCardNumber.matches("[37]\\d{11,14}")) {
+                creditCardType = creditCardNumber.getClass().getSimpleName();
+            } else if (creditCardNumber.matches("[6]\\d{12,15}")) {
+                creditCardType = creditCardNumber.getClass().getSimpleName();
+            }
+        }
+        else{
+            creditCardType = "Invalid card number";
+        }
+        return creditCardType;
     }
 
 }
