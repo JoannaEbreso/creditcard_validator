@@ -3,7 +3,7 @@ package com.creditCardValidation;
 //create class CreditCard
 public class CreditCard {
     private String creditCardNumber;
-    private String creditCardType;
+    private CardType creditCardType;
 
 
     public String getCreditCardNumber() {
@@ -85,20 +85,21 @@ public class CreditCard {
         }
     }
 
-    public String checkCardType(String creditCardNumber) {
+    public CardType checkCardType() {
+        creditCardNumber = this.getCreditCardNumber();
         if (isValid(creditCardNumber)) {
             if (creditCardNumber.matches("[5][1-4]\\d{14}") || creditCardNumber.matches("[222100-272099]\\d{10}")) {
-                creditCardType = creditCardNumber.getClass().getSimpleName();
-            } else if (creditCardNumber.matches("[4]\\d{12,18}")) {
-                creditCardType = creditCardNumber.getClass().getSimpleName();
+                creditCardType = CardType.MasterCard;
+            } else if (creditCardNumber.matches("[4-5]\\d{12,18}")) {
+                creditCardType = CardType.VerveCard;
             } else if (creditCardNumber.matches("[37]\\d{11,14}")) {
-                creditCardType = creditCardNumber.getClass().getSimpleName();
+                creditCardType = CardType.AmericanExpressCard;
             } else if (creditCardNumber.matches("[6]\\d{12,15}")) {
-                creditCardType = creditCardNumber.getClass().getSimpleName();
+                creditCardType = CardType.DiscoverCard;
             }
         }
         else{
-            creditCardType = "Invalid card number";
+            creditCardType = CardType.NotValid;
         }
         return creditCardType;
     }

@@ -31,13 +31,21 @@ class CreditCardTest {
 
     @Test
     void checkCardType(){
-        CreditCard creditCard1 = new MasterCard();
+        CreditCard creditCard1 = new CreditCard();
         creditCard1.setCreditCardNumber("5470136732184657");
-        assertEquals("Invalid card number",creditCard1.checkCardType(creditCard1.getCreditCardNumber()));
+        assertEquals(CardType.NotValid,creditCard1.checkCardType());
 
         CreditCard creditCard2 = new CreditCard();
         creditCard2.setCreditCardNumber("4000123456789010");
-        assertEquals("Invalid card number",creditCard2.checkCardType(creditCard2.getCreditCardNumber()));
+        assertEquals(CardType.NotValid,creditCard2.checkCardType());
+
+        CreditCard creditCard3 = new CreditCard();
+        creditCard3.setCreditCardNumber("5370100328846257");
+        assertEquals(CardType.MasterCard,creditCard3.checkCardType());
+
+        CreditCard creditCard4 = new CreditCard();
+        creditCard4.setCreditCardNumber("5061040228117203881");
+        assertEquals(CardType.VerveCard,creditCard4.checkCardType());
     }
 
     @Test

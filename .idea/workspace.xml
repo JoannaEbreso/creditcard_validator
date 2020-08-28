@@ -19,6 +19,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -161,30 +162,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1182" height="584" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598533939572">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.768@0.0.1366.768" timestamp="1598533939572" />
     <state x="488" y="59" key="#com.intellij.ide.util.MemberChooser" timestamp="1597455753745">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="488" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1597455753745" />
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1598407422222">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1598577693540">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598407422222" />
-    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1598407422222">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598577693540" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1598577693539">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598407422222" />
-    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1598407422221">
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598577693539" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1598577693539">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598407422221" />
-    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1598407422222">
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598577693539" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1598577693540">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598407422222" />
-    <state x="359" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1598405743060">
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598577693540" />
+    <state x="359" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1598533270123">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="359" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1598405743060" />
+    <state x="359" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1598533270123" />
     <state x="388" y="272" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1597321762414">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
